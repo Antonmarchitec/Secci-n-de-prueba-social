@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;    //font-weight: 400   500    700
+}
+
+
+.cont_base{
+    width: 100%;
+    height: 100vh;
+    //background: rgba(255, 255, 255, 0.671);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .CONTAINER{
+        width: 100%;
+        max-width: 1100px;
+        //background: rgba(102, 102, 102, 0.397);
+        margin: auto;
+        display: grid;
+        //gap: 1em;
+        grid-template-columns: repeat(12,1fr);
+        grid-template-rows: repeat(2,auto);
+        grid-template-areas: "DESCRPTION   DESCRPTION  DESCRPTION  DESCRPTION  DESCRPTION  DESCRPTION  VALORACION   VALORACION  VALORACION  VALORACION  VALORACION  VALORACION "
+                             "DESCRPTION   DESCRPTION  DESCRPTION  DESCRPTION  DESCRPTION  DESCRPTION  VALORACION   VALORACION  VALORACION  VALORACION  VALORACION  VALORACION"
+                             "CUADRO1      CUADRO1     CUADRO1     CUADRO1     CUADRO2      CUADRO2     CUADRO2      CUADRO2     CUADRO3      CUADRO3     CUADRO3     CUADRO3"
+                             "CUADRO1      CUADRO1     CUADRO1     CUADRO1     CUADRO2      CUADRO2     CUADRO2      CUADRO2     CUADRO3      CUADRO3     CUADRO3     CUADRO3"
+                             "CUADRO1      CUADRO1     CUADRO1     CUADRO1     CUADRO2      CUADRO2     CUADRO2      CUADRO2     CUADRO3      CUADRO3     CUADRO3     CUADRO3";
+        .DESCRPTION{
+            padding:20px;
+            //background: cadetblue;
+            grid-area: DESCRPTION;
+        }
+        .VALORACION{
+            padding: 20px;
+            //background: cadetblue;
+            grid-area: VALORACION;
+        }
+        .CUADRO1{
+            padding: 0px 20px;
+            //background: cadetblue;
+            grid-area: CUADRO1;
+        }
+        .CUADRO2{
+            margin-top: 20px;
+            padding: 0px 20px;
+            //background: cadetblue;
+            grid-area: CUADRO2;
+        }
+        .CUADRO3{
+            margin-top: 40px;
+            padding: 0px 20px;
+            //background: cadetblue;
+            grid-area: CUADRO3;
+        }
+    }
+    
+}
+
+
+
+
+
+@media (min-width:20px) and (max-width:423px) {
+    .cont_base{
+        .CONTAINER{
+            width: 100%;
+            max-width: 1100px;
+            //background: rgba(192, 5, 5, 0.863);
+            margin: auto;
+            display: grid;
+            gap: 1em;
+            grid-template-columns: repeat(12,1fr);
+            grid-template-rows: repeat(2,auto);
+            grid-template-areas: "DESCRPTION   DESCRPTION  DESCRPTION  DESCRPTION  DESCRPTION  DESCRPTION  DESCRPTION   DESCRPTION  DESCRPTION  DESCRPTION  DESCRPTION  DESCRPTION "
+                                 "VALORACION   VALORACION  VALORACION  VALORACION  VALORACION  VALORACION  VALORACION  VALORACION   VALORACION  VALORACION  VALORACION  VALORACION "
+                                 "CUADRO1      CUADRO1     CUADRO1     CUADRO1     CUADRO1      CUADRO1     CUADRO1     CUADRO1     CUADRO1      CUADRO1     CUADRO1     CUADRO1"
+                                 "CUADRO2      CUADRO2     CUADRO2      CUADRO2     CUADRO2      CUADRO2     CUADRO2      CUADRO2    CUADRO2      CUADRO2     CUADRO2    CUADRO2"
+                                 "CUADRO3      CUADRO3     CUADRO3     CUADRO3     CUADRO3      CUADRO3     CUADRO3     CUADRO3     CUADRO3      CUADRO3     CUADRO3     CUADRO3";
+                                 .CUADRO2{
+                                    margin-top: 0px;
+                                    padding: 0px 20px;
+                                    //background: cadetblue;
+                                    grid-area: CUADRO2;
+                                }
+                                .CUADRO3{
+                                    margin-top: 0px;
+                                    padding: 0px 20px;
+                                    //background: cadetblue;
+                                    grid-area: CUADRO3;
+                                    margin-bottom: 100px;
+                                }
+        }
+    }    
+}

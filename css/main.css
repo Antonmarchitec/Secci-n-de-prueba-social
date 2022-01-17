@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+.cont_base {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cont_base .CONTAINER {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: "DESCRPTION   DESCRPTION  DESCRPTION  DESCRPTION  DESCRPTION  DESCRPTION  VALORACION   VALORACION  VALORACION  VALORACION  VALORACION  VALORACION " "DESCRPTION   DESCRPTION  DESCRPTION  DESCRPTION  DESCRPTION  DESCRPTION  VALORACION   VALORACION  VALORACION  VALORACION  VALORACION  VALORACION" "CUADRO1      CUADRO1     CUADRO1     CUADRO1     CUADRO2      CUADRO2     CUADRO2      CUADRO2     CUADRO3      CUADRO3     CUADRO3     CUADRO3" "CUADRO1      CUADRO1     CUADRO1     CUADRO1     CUADRO2      CUADRO2     CUADRO2      CUADRO2     CUADRO3      CUADRO3     CUADRO3     CUADRO3" "CUADRO1      CUADRO1     CUADRO1     CUADRO1     CUADRO2      CUADRO2     CUADRO2      CUADRO2     CUADRO3      CUADRO3     CUADRO3     CUADRO3";
+}
+.cont_base .CONTAINER .DESCRPTION {
+  padding: 20px;
+  grid-area: DESCRPTION;
+}
+.cont_base .CONTAINER .VALORACION {
+  padding: 20px;
+  grid-area: VALORACION;
+}
+.cont_base .CONTAINER .CUADRO1 {
+  padding: 0px 20px;
+  grid-area: CUADRO1;
+}
+.cont_base .CONTAINER .CUADRO2 {
+  margin-top: 20px;
+  padding: 0px 20px;
+  grid-area: CUADRO2;
+}
+.cont_base .CONTAINER .CUADRO3 {
+  margin-top: 40px;
+  padding: 0px 20px;
+  grid-area: CUADRO3;
+}
+
+@media (min-width: 20px) and (max-width: 423px) {
+  .cont_base .CONTAINER {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "DESCRPTION   DESCRPTION  DESCRPTION  DESCRPTION  DESCRPTION  DESCRPTION  DESCRPTION   DESCRPTION  DESCRPTION  DESCRPTION  DESCRPTION  DESCRPTION " "VALORACION   VALORACION  VALORACION  VALORACION  VALORACION  VALORACION  VALORACION  VALORACION   VALORACION  VALORACION  VALORACION  VALORACION " "CUADRO1      CUADRO1     CUADRO1     CUADRO1     CUADRO1      CUADRO1     CUADRO1     CUADRO1     CUADRO1      CUADRO1     CUADRO1     CUADRO1" "CUADRO2      CUADRO2     CUADRO2      CUADRO2     CUADRO2      CUADRO2     CUADRO2      CUADRO2    CUADRO2      CUADRO2     CUADRO2    CUADRO2" "CUADRO3      CUADRO3     CUADRO3     CUADRO3     CUADRO3      CUADRO3     CUADRO3     CUADRO3     CUADRO3      CUADRO3     CUADRO3     CUADRO3";
+  }
+  .cont_base .CONTAINER .CUADRO2 {
+    margin-top: 0px;
+    padding: 0px 20px;
+    grid-area: CUADRO2;
+  }
+  .cont_base .CONTAINER .CUADRO3 {
+    margin-top: 0px;
+    padding: 0px 20px;
+    grid-area: CUADRO3;
+    margin-bottom: 100px;
+  }
+}
+.contDes {
+  width: 100%;
+  background: white;
+}
+.contDes .title {
+  width: 350px;
+  color: #511f50;
+  line-height: 32px;
+  font-weight: 700;
+}
+.contDes .parrafo {
+  margin-top: 15px;
+  font-weight: 400;
+}
+
+@media (min-width: 20px) and (max-width: 423px) {
+  .contDes {
+    padding-top: 80px;
+    width: 100%;
+    background: white;
+    text-align: center;
+  }
+  .contDes .title {
+    width: 100%;
+    color: #511f50;
+    line-height: 32px;
+    font-weight: 700;
+  }
+  .contDes .parrafo {
+    margin-top: 15px;
+    font-weight: 400;
+  }
+}
+.contVal {
+  width: 100%;
+}
+.contVal .ele1 {
+  width: 350px;
+  margin-bottom: 10px;
+  background: rgba(224, 224, 224, 0.815);
+  border-radius: 5px;
+  padding: 18px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.contVal .ele1 .block {
+  width: 80px;
+}
+.contVal .ele1 .valText {
+  font-weight: 700;
+  font-size: 12px;
+  color: #410b74;
+}
+.contVal .ele2 {
+  width: 350px;
+  margin-bottom: 10px;
+  margin-left: 40px;
+  background: rgba(224, 224, 224, 0.815);
+  border-radius: 5px;
+  padding: 18px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.contVal .ele2 .block {
+  width: 80px;
+}
+.contVal .ele2 .valText {
+  font-weight: 700;
+  font-size: 12px;
+  color: #410b74;
+}
+.contVal .ele3 {
+  width: 350px;
+  margin-bottom: 10px;
+  margin-left: 80px;
+  background: rgba(224, 224, 224, 0.815);
+  border-radius: 5px;
+  padding: 18px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.contVal .ele3 .block {
+  width: 80px;
+}
+.contVal .ele3 .valText {
+  font-weight: 700;
+  font-size: 12px;
+  color: #410b74;
+}
+
+@media (min-width: 20px) and (max-width: 423px) {
+  .contVal {
+    width: 100%;
+  }
+  .contVal .ele1 {
+    width: 100%;
+    margin-bottom: 10px;
+    background: rgba(224, 224, 224, 0.815);
+    border-radius: 5px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contVal .ele1 .block {
+    width: 100px;
+    margin: auto;
+  }
+  .contVal .ele1 .block img {
+    width: 15px;
+    height: 15px;
+  }
+  .contVal .ele1 .valText {
+    margin-top: 5px;
+    font-weight: 700;
+    font-size: 12px;
+    color: #410b74;
+  }
+  .contVal .ele2 {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    background: rgba(224, 224, 224, 0.815);
+    border-radius: 5px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contVal .ele2 .block {
+    width: 100px;
+  }
+  .contVal .ele2 .block img {
+    width: 15px;
+    height: 15px;
+  }
+  .contVal .ele2 .valText {
+    margin-top: 5px;
+    font-weight: 700;
+    font-size: 12px;
+    color: #410b74;
+  }
+  .contVal .ele3 {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    background: rgba(224, 224, 224, 0.815);
+    border-radius: 5px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contVal .ele3 .block {
+    width: 100px;
+  }
+  .contVal .ele3 .block img {
+    width: 15px;
+    height: 15px;
+  }
+  .contVal .ele3 .valText {
+    margin-top: 5px;
+    font-weight: 700;
+    font-size: 12px;
+    color: #410b74;
+  }
+}
+.contCuadro1 {
+  width: 100%;
+  padding: 20px;
+  background: #511f50;
+  border-radius: 10px;
+}
+.contCuadro1 .caja1 {
+  width: 100%;
+  padding: 5px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.contCuadro1 .caja1 .img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: url(../images/image-colton.jpg);
+  background-size: 100% 100%;
+}
+.contCuadro1 .caja1 .img2 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: url(../images/image-irene.jpg);
+  background-size: 100% 100%;
+}
+.contCuadro1 .caja1 .img3 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: url(../images/image-anne.jpg);
+  background-size: 100% 100%;
+}
+.contCuadro1 .caja1 .descCaja1 {
+  width: 200px;
+  padding: 10px;
+}
+.contCuadro1 .caja1 .descCaja1 .titleC1 {
+  font-size: 14px;
+  color: white;
+  font-weight: 400;
+}
+.contCuadro1 .caja1 .descCaja1 .titleS {
+  font-size: 14px;
+  color: #833c74;
+  font-weight: 400;
+}
+.contCuadro1 .caja2 {
+  margin-top: 10px;
+  width: 100%;
+  padding: 5px 0px;
+}
+.contCuadro1 .caja2 .textCaja2 {
+  color: #c6aac3;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+@media (min-width: 20px) and (max-width: 423px) {
+  .contCuadro1 {
+    width: 98%;
+    margin: auto;
+  }
+  .contCuadro1 .caja1 {
+    width: 100%;
+    padding: 5px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .contCuadro1 .caja1 .img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url(../images/image-colton.jpg);
+    background-size: 100% 100%;
+  }
+  .contCuadro1 .caja1 .img2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url(../images/image-irene.jpg);
+    background-size: 100% 100%;
+  }
+  .contCuadro1 .caja1 .img3 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url(../images/image-anne.jpg);
+    background-size: 100% 100%;
+  }
+  .contCuadro1 .caja1 .descCaja1 {
+    width: 200px;
+    padding: 10px;
+  }
+  .contCuadro1 .caja1 .descCaja1 .titleC1 {
+    font-size: 14px;
+    color: white;
+    font-weight: 400;
+  }
+  .contCuadro1 .caja1 .descCaja1 .titleS {
+    font-size: 14px;
+    color: blueviolet;
+    font-weight: 400;
+  }
+  .contCuadro1 .caja2 {
+    margin-top: 10px;
+    width: 100%;
+    padding: 5px 0px;
+  }
+  .contCuadro1 .caja2 .textCaja2 {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

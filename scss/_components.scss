@@ -1,0 +1,331 @@
+@import "colors";
+
+.contDes{
+    width:100%;
+    background: white;
+    .title{
+        width: 350px;
+        color:$colorprimario;
+        line-height: 32px;
+        font-weight: 700;
+    }
+    .parrafo{
+        margin-top: 15px;
+        font-weight: 400;
+        
+    }
+}
+
+
+@media (min-width:20px) and (max-width:423px) {
+    .contDes{
+        padding-top: 80px;
+        width:100%;
+        background: white;
+        text-align: center;
+        .title{
+            width: 100%;
+            color:$colorprimario;
+            line-height: 32px;
+            font-weight: 700;
+            //background: chartreuse;
+        }
+        .parrafo{
+            margin-top: 15px;
+            font-weight: 400;
+            
+        }
+    }
+}
+
+
+.contVal{
+    width: 100%;
+    //background: white;
+    .ele1{
+        width: 350px;
+        margin-bottom: 10px;
+        background: rgba(224, 224, 224, 0.815);
+        border-radius: 5px;
+        padding: 18px;
+        display: flex;
+        flex-direction: row;
+        //justify-content: center;
+        align-items: center;
+        .block{
+            width:80px;
+            //background: blue;
+        }
+        .valText{
+            //background: blueviolet;
+            font-weight: 700;
+            font-size: 12px;
+            color: rgb(65, 11, 116);
+        }
+    }
+    .ele2{
+        width: 350px;
+        margin-bottom: 10px;
+        margin-left: 40px;
+        background: rgba(224, 224, 224, 0.815);
+        border-radius: 5px;
+        padding: 18px;
+        display: flex;
+        flex-direction: row;
+        //justify-content: center;
+        align-items: center;
+        .block{
+            width:80px;
+            //background: blue;
+        }
+        .valText{
+            //background: blueviolet;
+            font-weight: 700;
+            font-size: 12px;
+            color: rgb(65, 11, 116);
+        }
+    }
+    .ele3{
+        width: 350px;
+        margin-bottom: 10px;
+        margin-left: 80px;
+        background: rgba(224, 224, 224, 0.815);
+        border-radius: 5px;
+        padding: 18px;
+        display: flex;
+        flex-direction: row;
+        //justify-content: center;
+        align-items: center;
+        .block{
+            width:80px;
+            //background: blue;
+        }
+        .valText{
+            //background: blueviolet;
+            font-weight: 700;
+            font-size: 12px;
+            color: rgb(65, 11, 116);
+        }
+    }
+}
+
+@media (min-width:20px) and (max-width:423px) {
+    .contVal{
+        width: 100%;
+        //background: white;
+        
+        .ele1{
+            width: 100%;
+            margin-bottom: 10px;
+            background: rgba(224, 224, 224, 0.815);
+            border-radius: 5px;
+            padding: 18px;
+            display: flex;
+            flex-direction: column;
+            //justify-content: center;
+            align-items: center;
+            .block{
+                width:100px;
+                margin: auto;
+                //background: blue;
+                img{
+                    width: 15px;
+                    height: 15px;
+                }
+                
+            }
+            .valText{
+                margin-top:5px;
+                //background: blueviolet;
+                font-weight: 700;
+                font-size: 12px;
+                color: rgb(65, 11, 116);
+            }
+        }
+        .ele2{
+            width: 100%;
+            margin-bottom: 10px;
+            margin-left: 0px;
+            background: rgba(224, 224, 224, 0.815);
+            border-radius: 5px;
+            padding: 18px;
+            display: flex;
+            flex-direction: column;
+            //justify-content: center;
+            align-items: center;
+            .block{
+                width:100px;
+                //background: blue;
+                img{
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+            .valText{
+                //background: blueviolet;
+                margin-top: 5px;
+                font-weight: 700;
+                font-size: 12px;
+                color: rgb(65, 11, 116);
+            }
+        }
+        .ele3{
+            width: 100%;
+            margin-bottom: 10px;
+            margin-left: 0px;
+            background: rgba(224, 224, 224, 0.815);
+            border-radius: 5px;
+            padding: 18px;
+            display: flex;
+            flex-direction: column;
+            //justify-content: center;
+            align-items: center;
+            .block{
+                width:100px;
+                //background: blue;
+                img{
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+            .valText{
+                margin-top: 5px;
+                //background: blueviolet;
+                font-weight: 700;
+                font-size: 12px;
+                color: rgb(65, 11, 116);
+            }
+        }
+    }
+}
+
+
+
+.contCuadro1{
+    width: 100%;
+    padding: 20px;
+    background:$colorprimario;
+    border-radius: 10px;
+    .caja1{
+        width: 100%;
+        padding: 5px 0px;
+        //background: burlywood;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-image: url(../images/image-colton.jpg);
+            background-size: 100% 100%;
+        }
+        .img2{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-image: url(../images/image-irene.jpg);
+            background-size: 100% 100%;
+        }
+        .img3{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-image: url(../images/image-anne.jpg);
+            background-size: 100% 100%;
+        }
+        .descCaja1{
+            width: 200px;
+            //background: chartreuse;
+            padding: 10px;
+            .titleC1{
+                font-size: 14px;
+                color: $colorcuaternario;
+                font-weight: 400;
+            }
+            .titleS{
+                font-size: 14px;
+                color: $colorsecundario;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .caja2{
+        margin-top: 10px;
+        width: 100%;
+        padding: 5px 0px;
+        //background: rgb(68, 63, 56);
+        .textCaja2{
+            color:$colorterciario;
+            font-size: 15px;
+            font-weight: 400;
+        }
+    }
+}
+
+@media (min-width:20px) and (max-width:423px) {
+    .contCuadro1{
+        width: 98%;
+        margin: auto;
+        .caja1{
+            width: 100%;
+            padding: 5px 0px;
+            //background: burlywood;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .img{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background-image: url(../images/image-colton.jpg);
+                background-size: 100% 100%;
+            }
+            .img2{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background-image: url(../images/image-irene.jpg);
+                background-size: 100% 100%;
+            }
+            .img3{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background-image: url(../images/image-anne.jpg);
+                background-size: 100% 100%;
+            }
+            .descCaja1{
+                width: 200px;
+                //background: chartreuse;
+                padding: 10px;
+                .titleC1{
+                    font-size: 14px;
+                    color: white;
+                    font-weight: 400;
+                }
+                .titleS{
+                    font-size: 14px;
+                    color: blueviolet;
+                    font-weight: 400;
+                }
+            }
+        }
+    
+        .caja2{
+            margin-top: 10px;
+            width: 100%;
+            padding: 5px 0px;
+            //background: rgb(68, 63, 56);
+            .textCaja2{
+                color: white;
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+
+
